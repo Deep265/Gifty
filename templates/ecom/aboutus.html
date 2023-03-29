@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Gifty</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">
+  ‘Organization Name’
+
+We have a vast scope of gifts that are appropriate for the two kids and grown-ups, for example, school supplies, keychains, and pens to kitchen utensils. We are additionally a retailer of Hello Kitty and Ty and move famous and popular toys, for example, whirligigs, squishies, and LOL dolls.
+
+New York stocks like taxi/metro vehicles, snow globes, containers/mugs, magnets, and postcards can likewise be obtained here.
+
+We have a vast scope of gifts that are appropriate for the two kids and grown-ups, for example, school supplies, keychains, and pens to kitchen utensils.
+
+We are additionally a retailer of Hello Kitty and Ty and move famous and popular toys, for example, squishies and LOL dolls. New York stocks like taxi/tram vehicles.
+
+Our “hands-on” way to deal with Full Customer Satisfaction implies that you can depend on ‘Organization Name’ to ensure your request is in every case right and that your gifts Canada are constantly conveyed Fresh and On-Time… Every time!!
+
+Our Gift Basket Designers are the best in the business, venturing to the far corners of the planet for the most faultless flavors, exceptional quality and the most extreme esteem found anyplace.
+
+So whether you’re searching for a solitary Gift Basket plan for that exact extraordinary somebody, or you have to have an outstanding effect in all cases with each Customer and Associate who helps steer and blend your business consistently, ‘Organization Name’ have recently the correct Gift for each event.
+</h3>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>
